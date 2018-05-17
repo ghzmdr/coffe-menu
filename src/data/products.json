@@ -1,0 +1,285 @@
+[{
+    "name": "Skywalker OG",
+    "hasDiscount": true,
+    "species": "Hybrid",
+    "copy": "Insane THC level, a combination of both indica and sativa effects and a spicy fuel taste",
+    "kind": "kush",
+    "slug": "skywalker_og",
+    "image": "/assets/images/weeds/kush/skywalker_og.jpg",
+    "price": "16"
+}, {
+    "name": "Strawberry Banana",
+    "hasDiscount": true,
+    "species": "Hybrid / Indica",
+    "copy": "Fruity combination with a Dark and complex aroma. With relaxing but euphoric effects",
+    "kind": "kush",
+    "slug": "strawberry_banana",
+    "image": "/assets/images/weeds/kush/strawberry_banana.jpg",
+    "price": "16"
+}, {
+    "name": "Mango Kush",
+    "hasDiscount": true,
+    "species": "Hybrid / Sativa",
+    "copy": "Deep mango flavour. Dense buds that will leave you giggly and relaxed.",
+    "kind": "kush",
+    "slug": "mango",
+    "image": "/assets/images/weeds/kush/mango.jpg",
+    "price": "16"
+}, {
+    "name": "Kosher Kush",
+    "hasDiscount": true,
+    "species": "Hybrid / Indica",
+    "copy": "Intense earthy and fruity taste, heavily relaxing effects.",
+    "kind": "kush",
+    "slug": "kosher",
+    "image": "/assets/images/weeds/kush/kosher.jpg",
+    "price": "15"
+}, {
+    "name": "Rollex Og",
+    "hasDiscount": true,
+    "species": "Hybrid / Indica",
+    "copy": "Piney and skunky smell, a cerebral high with a relaxing ending.",
+    "kind": "kush",
+    "slug": "rollex",
+    "image": "/assets/images/weeds/kush/rollex.jpg",
+    "price": "15"
+}, {
+    "name": "Og Kush",
+    "hasDiscount": true,
+    "species": "Hybrid",
+    "copy": "The backbone of all kush strains.",
+    "kind": "kush",
+    "slug": "og",
+    "image": "/assets/images/weeds/kush/og.jpg",
+    "price": "14"
+}, {
+    "name": "Holy Grail",
+    "hasDiscount": true,
+    "species": "Hybrid",
+    "copy": "Spicy smell, relaxing effects.",
+    "kind": "kush",
+    "slug": "holy",
+    "image": "/assets/images/weeds/kush/holy.jpg",
+    "price": "16"
+}
+
+
+
+
+
+
+
+, {
+    "name": "Strawberry Haze",
+    "hasDiscount": true,
+    "species": "Sativa",
+    "copy": "Sweet berry taste for a strong uplifting high",
+    "kind": "haze",
+    "slug": "strawberry",
+    "image": "/assets/images/weeds/haze/strawberry.jpg",
+    "price": "13"
+}, {
+    "name": "Lemon Haze",
+    "hasDiscount": true,
+    "species": "Sativa",
+    "copy": "Freshly peeled lemons for a happy high",
+    "kind": "haze",
+    "slug": "lemon",
+    "image": "/assets/images/weeds/haze/lemon.jpg",
+    "price": "13"
+}, {
+    "name": "Silver Haze",
+    "hasDiscount": true,
+    "species": "Sativa",
+    "copy": "Dutch classic, compact buds and pungent taste",
+    "kind": "haze",
+    "slug": "silver",
+    "image": "/assets/images/weeds/haze/silver.jpg",
+    "price": "12"
+}, {
+    "name": "Amnesia G-13 Haze",
+    "hasDiscount": true,
+    "species": "Hybrid / Sativa",
+    "copy": "Good hybrid with fruity taste for an happy and relaxed high",
+    "kind": "haze",
+    "slug": "amnesia",
+    "image": "/assets/images/weeds/haze/amnesia.png",
+    "price": "9.5"
+}, {
+    "name": "Purple Haze",
+    "hasDiscount": true,
+    "species": "Sativa",
+    "copy": "A mellow weed for beginners or very light joints",
+    "kind": "haze",
+    "slug": "purple",
+    "image": "/assets/images/weeds/haze/purple.jpg",
+    "price": "7.6"
+}
+
+
+
+
+
+
+
+
+, {
+    "name": "Gorilla Glue",
+    "hasDiscount": true,
+    "species": "Hybrid",
+    "copy": "Heavy-handed euphoria ending with a couch gluing relax",
+    "kind": "classic",
+    "slug": "gorilla",
+    "image": "/assets/images/weeds/classics/gorilla.jpg",
+    "price": "16"
+}, {
+    "name": "Buddha Cheese",
+    "hasDiscount": true,
+    "species": "Hybrid",
+    "copy": "Underground classic with a skynky smell",
+    "kind": "classic",
+    "slug": "cheese",
+    "image": "/assets/images/weeds/classics/cheese.jpg",
+    "price": "16"
+}, {
+    "name": "24K / Kosher Tangie",
+    "hasDiscount": true,
+    "species": "Hybrid",
+    "copy": "Complex skunky and citrousy aroma",
+    "kind": "classic",
+    "slug": "24k",
+    "image": "/assets/images/weeds/classics/24k.jpg",
+    "price": "16"
+}, {
+    "name": "NYC Diesel",
+    "hasDiscount": true,
+    "species": "Hybrid",
+    "copy": "Pungent aroma for cerebral effects that ease into body relaxation.",
+    "kind": "classic",
+    "slug": "nyc",
+    "image": "/assets/images/weeds/classics/nyc.jpg",
+    "price": "16"
+}, {
+    "name": "Kali Mist",
+    "hasDiscount": true,
+    "species": "Sativa",
+    "copy": "Clear-heaeded highs, almost psychedelic",
+    "kind": "classic",
+    "slug": "kali",
+    "image": "/assets/images/weeds/classics/kali.jpg",
+    "price": "16"
+}, {
+    "name": "AK 47",
+    "hasDiscount": true,
+    "species": "Hybrid / Sativa",
+    "copy": "Blend of flavors and effects. Floral notes with a relaxed high.",
+    "kind": "classic",
+    "slug": "ak",
+    "image": "/assets/images/weeds/classics/ak.jpg",
+    "price": "16"
+}, {
+    "name": "White Widow",
+    "hasDiscount": true,
+    "species": "Hybrid",
+    "copy": "Piney taste, for a stoney high",
+    "kind": "classic",
+    "slug": "ww",
+    "image": "/assets/images/weeds/classics/ww.jpg",
+    "price": "16"
+},
+
+
+
+
+
+
+
+
+
+
+{
+    "name": "Strawberry Kush",
+    "hasDiscount": true,
+    "species": "Maroccan",
+    "copy": "Sweet spicy taste for a relaxing stone",
+    "kind": "hash",
+    "slug": "straw-hash",
+    "price": "13"
+}, {
+    "name": "Nepal",
+    "hasDiscount": true,
+    "species": "Black",
+    "copy": "Soft and black",
+    "kind": "hash",
+    "slug": "nepal",
+    "price": "13"
+}, {
+    "name": "Dealer's Polm",
+    "hasDiscount": true,
+    "species": "Polm",
+    "copy": "The polm your dealer would smoke",
+    "kind": "hash",
+    "slug": "nepal",
+    "price": "12"
+}, {
+    "name": "Super Super Polm",
+    "hasDiscount": true,
+    "slug": "super-polm",
+    "species": "Polm",
+    "copy": "Softer and more refined polm",
+    "kind": "hash",
+    "price": "10"
+}, {
+    "name": "Super Polm",
+    "hasDiscount": true,
+    "species": "Polm",
+    "copy": "Base polm",
+    "kind": "hash",
+    "slug": "super-super",
+    "price": "6"
+}, {
+    "name": "Afghan",
+    "hasDiscount": true,
+    "species": "Black",
+    "copy": "Deep dark smoke",
+    "kind": "hash",
+    "slug": "afg",
+    "price": "6"
+}
+
+
+
+, {
+    "name": "Haze",
+    "species": "Sativa",
+    "copy": "A strong blend of our Hazes",
+    "kind": "joint",
+    "slug": "haze",
+    "price": "5"
+}, {
+    "name": "White Widow",
+    "species": "50/50",
+    "copy": "A strong blend of our weeds",
+    "kind": "joint",
+    "slug": "ww-joint",
+    "price": "4"
+}, {
+    "name": "Shiva",
+    "species": "50/50",
+    "copy": "A light blend of our weeds",
+    "kind": "joint",
+    "slug": "haze",
+    "price": "4"
+},
+
+
+{
+    "name": "Space Cake",
+    "species": "50/50",
+    "copy": "A chocolate muffin containing 0.5g of weed",
+    "kind": "edibles",
+    "slug": "cake",
+    "price": "6.5"
+}
+
+]

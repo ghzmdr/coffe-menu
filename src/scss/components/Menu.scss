@@ -1,0 +1,44 @@
+.Menu.is-gapless > .column {
+    padding: 1rem !important;
+}
+
+.Menu table {
+    text-transform: uppercase;
+    width: 100%;
+    background: transparent;
+    color: yellow;
+    font-weight: bold;
+
+    thead th {
+        color: white;
+        text-align: center;
+
+        &:first-child {
+            text-align: left;
+        }
+    }
+
+    th {
+        vertical-align: bottom;
+
+        &:first-child {
+            width: 22%;
+        }
+
+        &:last-child {
+            width: 14%;
+        }
+    }
+
+    tbody {
+
+        td {
+            vertical-align: middle;
+        }
+
+        &:first-child {
+            width: 30%;
+        }
+    }
+}
+
