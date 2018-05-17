@@ -15,7 +15,7 @@ function init() {
 
     clock = new THREE.Clock();
 
-    renderer = new THREE.WebGLRenderer();
+    renderer = new THREE.WebGLRenderer({ alpha: true });
     renderer.setSize( window.innerWidth, window.innerHeight );
 
     scene = new THREE.Scene();
