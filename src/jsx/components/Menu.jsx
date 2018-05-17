@@ -71,7 +71,7 @@ class Menu extends Component {
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td className="ProductEntry_price" style={{textAlign: "right"}}>5€ Deposit</td>
+                            <td className="ProductEntry__price" style={{textAlign: "right"}}>5€ Deposit</td>
                         </tr>
                     </tbody>
                 </table>

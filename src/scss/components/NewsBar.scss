@@ -22,19 +22,16 @@
 
     padding-left: 2rem;
 
-    display: flex;
-    align-content: center;
-
     vertical-align: middle;
     color: white;
     font-size: 2rem;
 
-    p {
-        flex: 1 1;
-    }
-
+    text-shadow: 1px 1px #2B2B2B;
+    line-height: 3.7rem;
 
     animation: scroll-text infinite 20s linear;
+
+    @include text-aliasing;
 }
 
 
