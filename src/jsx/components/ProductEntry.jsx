@@ -34,7 +34,7 @@ class ProductEntry extends Component {
                     <span className={`tag is-${kindTagColor} is-size-5 ProductEntry__label`}>{product.kind}</span>
                 </td>
 
-                <td className="">{/*<p>{product.copy}</p>*/}</td>
+                <td className="">{/*<p>{product.position}</p>*/}</td>
                 {
                     prices.map((p, i) => <td key={i} className="ProductEntry__price">
                         {p ? `${p}€` : ''}

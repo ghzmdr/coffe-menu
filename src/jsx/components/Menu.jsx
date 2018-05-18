@@ -29,7 +29,7 @@ class Menu extends Component {
                 <table className="table">
 
                     <ProductsHeader tabs="Hashish,,,1g,4g,5g"/>
-                    <ProductsList products={products.filter(p => p.category === 'Hash')}/>
+                    <ProductsList products={products.filter(p => p.category === 'Hashish')}/>
                 </table>
                 <table className="table">
                     <ProductsHeader tabs="Joints,,,,,1 piece"/>
