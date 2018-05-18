@@ -6,20 +6,22 @@ import ProductsHeader from './ProductsHeader';
 class Menu extends Component {
 
     render() {
-        const {kinds, products} = this.props;
+        const {products} = this.props;
+
+        if (!products) return null;
 
         return <div className="Menu columns is-gapless">
             <div className="column is-half">
                 <table className="table">
 
                     <ProductsHeader tabs="Kush,,,1g,4g,5g"/>
-                    <ProductsList products={products.filter(p => p.kind === 'kush')}/>
+                    <ProductsList products={products.filter(p => p.category === 'Kush')}/>
 
                     <ProductsHeader tabs="Haze,,,1g,4g,5g"/>
-                    <ProductsList products={products.filter(p => p.kind === 'haze')}/>
+                    <ProductsList products={products.filter(p => p.category === 'Haze')}/>
 
                     <ProductsHeader tabs="Classics,,,1g,4g,5g"/>
-                    <ProductsList products={products.filter(p => p.kind === 'classic')}/>
+                    <ProductsList products={products.filter(p => p.category === 'Classics')}/>
 
                 </table>
             </div>
@@ -27,19 +29,19 @@ class Menu extends Component {
                 <table className="table">
 
                     <ProductsHeader tabs="Hashish,,,1g,4g,5g"/>
-                    <ProductsList products={products.filter(p => p.kind === 'hash')}/>
+                    <ProductsList products={products.filter(p => p.category === 'Hash')}/>
                 </table>
                 <table className="table">
                     <ProductsHeader tabs="Joints,,,,,1 piece"/>
-                    <ProductsList products={products.filter(p => p.kind === 'joint')}/>
+                    <ProductsList products={products.filter(p => p.category === 'Prerolled')}/>
 
                     <ProductsHeader tabs="Edibles,,,,,1 piece"/>
-                    <ProductsList products={products.filter(p => p.kind === 'edibles')}/>
+                    <ProductsList products={products.filter(p => p.category === 'Edibles')}/>
 
                 </table>
                 <table className="table">
 
-                    <ProductsHeader tabs="Services,,,,,,"/>
+                    <ProductsHeader tabs="Services,,,,,,Price"/>
 
                     <tbody className="ProductsList">
                         <tr className="ProductEntry">
@@ -49,7 +51,7 @@ class Menu extends Component {
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td className="ProductEntry__price" style={{textAlign: "right"}}>1.6€ / 20 Min</td>
+                            <td className="ProductEntry__price">1.6€ / 20 Min</td>
                         </tr>
                         <tr width="100%">
                             <td className="ProductEntry__name">Pooltable</td>
@@ -58,11 +60,11 @@ class Menu extends Component {
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td className="ProductEntry__price" style={{textAlign: "right"}}>2€ / 1 Game</td>
+                            <td className="ProductEntry__price">2€ / 1 Game</td>
                         </tr>
                     </tbody>
 
-                    <ProductsHeader tabs="Tools,,,,,,"/>
+                    <ProductsHeader tabs="Tools,,,,,,Deposit"/>
                     <tbody>
                         <tr className="ProductEntry">
                             <td className="ProductEntry__name">Bongs, Pipes, Grinders</td>
@@ -71,7 +73,7 @@ class Menu extends Component {
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td className="ProductEntry__price" style={{textAlign: "right"}}>5€ Deposit</td>
+                            <td className="ProductEntry__price">5€</td>
                         </tr>
                     </tbody>
                 </table>

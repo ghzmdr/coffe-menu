@@ -29,7 +29,12 @@
     text-shadow: 1px 1px #2B2B2B;
     line-height: 3.7rem;
 
-    animation: scroll-text infinite 20s linear;
+    p {
+        font-family: 'Roboto Slab';
+        display: inline-block;
+        animation: scroll-text infinite 20s linear;
+        text-transform: uppercase;
+    }
 
     @include text-aliasing;
 }
@@ -37,7 +42,7 @@
 
 @keyframes scroll-text {
     0% {
-        transform: translateX(100%);
+        transform: translateX(100vw);
     }
 
     100% {

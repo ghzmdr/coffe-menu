@@ -4,17 +4,17 @@ class ProductEntry extends Component {
     render() {
         const {product} = this.props;
 
-        let isIndica = product.species.indexOf('Indica') != -1;
-        let isSativa = product.species.indexOf('Sativa') != -1;
+        let isIndica = product.kind.indexOf('Indica') != -1;
+        let isSativa = product.kind.indexOf('Sativa') != -1;
 
-        let speciesTagColor = 'success';
+        let kindTagColor = 'success';
 
         if (isIndica) {
-            speciesTagColor = 'warning';
+            kindTagColor = 'warning';
         }
 
         if (isSativa) {
-            speciesTagColor = 'danger';
+            kindTagColor = 'danger';
         }
 
         const prices =  product.hasDiscount ? [
@@ -31,7 +31,7 @@ class ProductEntry extends Component {
                 <td className="ProductEntry__name">{product.name}</td>
 
                 <td>
-                    <span className={`tag is-${speciesTagColor} is-size-5 ProductEntry__label`}>{product.species}</span>
+                    <span className={`tag is-${kindTagColor} is-size-5 ProductEntry__label`}>{product.kind}</span>
                 </td>
 
                 <td className="">{/*<p>{product.copy}</p>*/}</td>

@@ -25,7 +25,9 @@
             width: 25%;
         }
 
-        &:last-child {
+        &:nth-last-child(1),
+        &:nth-last-child(2),
+        &:nth-last-child(3) {
             width: 14%;
         }
     }

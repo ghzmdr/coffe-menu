@@ -1,0 +1,9 @@
+{
+    "SPACE_ID": "<your_space_id>",
+    "API_KEY": "<your_api_key>",
+
+    "dataMapping": {
+        "products": "<your_products_content_type_id>",
+        "rules": "<your_rules_content_type_id>"
+    }
+}
