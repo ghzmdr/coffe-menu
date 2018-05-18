@@ -16,6 +16,8 @@ class App extends Component {
 
         this.state = {
             products: [],
+            tools: [],
+            services: [],
             rules: []
         };
 
@@ -25,15 +27,17 @@ class App extends Component {
         fetchData(config.SPACE_ID, config.API_KEY)
             .then(data => this.setState({
                 products: data[config.dataMapping.products],
+                tools: data[config.dataMapping.tools],
+                services: data[config.dataMapping.services],
                 rules: data[config.dataMapping.rules]
             }))
     }
 
     render() {
-        const {products, rules} = this.state;
+        const {products, tools, services, rules} = this.state;
         console.log('rul', rules)
         return <div className="Application">
-            <Menu products={products}/>
+            <Menu products={products} tools={tools} services={services}/>
             <NewsBar rules={rules}/>
         </div>
     }

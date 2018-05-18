@@ -6,7 +6,7 @@ import ProductsHeader from './ProductsHeader';
 class Menu extends Component {
 
     render() {
-        const {products} = this.props;
+        const {products, tools, services} = this.props;
 
         if (!products) return null;
 
@@ -44,37 +44,33 @@ class Menu extends Component {
                     <ProductsHeader tabs="Services,,,,,,Price"/>
 
                     <tbody className="ProductsList">
-                        <tr className="ProductEntry">
-                            <td className="ProductEntry__name">Internet</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td className="ProductEntry__price">1.6€ / 20 Min</td>
-                        </tr>
-                        <tr width="100%">
-                            <td className="ProductEntry__name">Pooltable</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td className="ProductEntry__price">2€ / 1 Game</td>
-                        </tr>
+                        {
+                            services.map((s, i) => <tr key={i} className="ProductEntry">
+                                <td className="ProductEntry__name">{s.name}</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td className="ProductEntry__price">{s.price}</td>
+                            </tr>)
+                        }
                     </tbody>
 
                     <ProductsHeader tabs="Tools,,,,,,Deposit"/>
                     <tbody>
-                        <tr className="ProductEntry">
-                            <td className="ProductEntry__name">Bongs, Pipes, Grinders</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td className="ProductEntry__price">5€</td>
-                        </tr>
+                        {
+                            tools.map((t, i) => <tr key={i} className="ProductEntry">
+                                <td className="ProductEntry__name">{t.name}</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td className="ProductEntry__price">{t.price}€</td>
+                            </tr>)
+                        }
+
                     </tbody>
                 </table>
             </div>
