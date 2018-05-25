@@ -1,8 +1,17 @@
 .ProductsHeader {
-    font-size: 1.4rem;
-    font-family: 'Roboto Slab';
+
+    tr th {
+        font-size: $item_fz;
+        // color: darken($yellow, 30%);
+        // color: #FFBF00;
+        text-shadow: 0 0 4px #FFBF00;
+        font-size: 2.4rem;
+        padding-bottom: 0.4rem !important;
+    }
+
 }
 
 .ProductHeader__price {
     text-align: center;
 }
+

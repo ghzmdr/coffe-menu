@@ -11,7 +11,7 @@ export default class NewsBar extends Component {
         return <div className="NewsBar">
             <div className="NewsBar__content content" >
                 <p>
-                    <b>HOUSE RULES</b>: {cleanRules.join(' • ')}
+                    <b>HOUSE RULES:</b> {cleanRules.join(' • ')} <span style={{paddingLeft: '50vw'}}><b>HOUSE RULES:</b> {cleanRules.join(' • ')}</span>
                 </p>
             </div>
         </div>

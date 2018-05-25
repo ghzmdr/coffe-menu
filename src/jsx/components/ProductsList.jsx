@@ -7,7 +7,7 @@ import {arrayMove} from '../../utils';
 class ProductsList extends Component {
 
     render() {
-        const {products} = this.props;
+        const {products, suffix} = this.props;
 
         let sorted = products.sort(this.sortProduct);
         sorted = this.resort(sorted);
@@ -16,7 +16,7 @@ class ProductsList extends Component {
 
         return <tbody className="ProductsList">
             {
-                sorted.map((p, i) => <ProductEntry product={p} key={i}/>)
+                sorted.map((p, i) => <ProductEntry product={p} key={i} suffix={suffix}/>)
             }
         </tbody>
     }

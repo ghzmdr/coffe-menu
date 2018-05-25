@@ -1,46 +1,46 @@
 .Menu.is-gapless > .column {
-    padding: 1rem !important;
+    padding: 0.5rem 1.8rem !important;
 }
 
 .Menu table {
-    text-transform: uppercase;
+
+    margin-bottom: 0 !important;
     width: 100%;
     background: transparent;
-    color: #7FDBFF;
-    font-weight: bold;
 
-    thead th {
-        color: white;
-        text-align: center;
-
-        &:first-child {
-            text-align: left;
-        }
+    th, td {
+        border-color: #b2b2b2;
     }
 
-    th {
-        vertical-align: bottom;
+    thead {
+        th {
 
-        &:first-child {
-            width: 25%;
-        }
+            text-align: center;
+            vertical-align: bottom;
 
-        &:nth-last-child(1),
-        &:nth-last-child(2),
-        &:nth-last-child(3) {
-            width: 14%;
+            &:first-child {
+                width: 25%;
+                text-align: left;
+            }
+
+            &:nth-last-child(1),
+            &:nth-last-child(2) {
+                width: 22%;
+            }
         }
     }
 
     tbody {
-
         td {
+
             vertical-align: middle;
+
+            &:first-child {
+                width: 30%;
+            }
+
         }
 
-        &:first-child {
-            width: 30%;
-        }
     }
 }
 

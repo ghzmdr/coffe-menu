@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
 
-    height: 4rem;
+    height: 6rem;
     background: red;
 
     border-top: 2px solid white;
@@ -24,16 +24,16 @@
 
     vertical-align: middle;
     color: white;
-    font-size: 2rem;
+    font-size: 4rem;
 
     text-shadow: 1px 1px #2B2B2B;
-    line-height: 3.7rem;
+    line-height: 5.7rem;
 
     p {
-        font-family: 'Roboto Slab';
         display: inline-block;
-        animation: scroll-text infinite 20s linear;
+        animation: scroll-text infinite 120s linear;
         text-transform: uppercase;
+        white-space: nowrap;
     }
 
     @include text-aliasing;

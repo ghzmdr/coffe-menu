@@ -1,16 +1,26 @@
 .ProductEntry {
+    td {
+        color: white;
+        color: black;
+        padding: 0.3em;
+        @include text-aliasing;
+    }
 }
 
-.ProductEntry__name {
-    font-size: 1.4rem;
+.ProductEntry__name,
+.ProductEntry__price {
+    font-size: $item_fz;
+    @include text-aliasing;
+    font-weight: bold;
 }
 
 .ProductEntry__label {
-    font-size: 1rem !important;
+    font-size: 1.6rem !important;
+    @include text-aliasing;
+    color: $dark !important;
+    background: $yellow !important;
 }
 
 .ProductEntry__price {
-    font-size: 1.4rem;
     text-align: center;
-    // width: 12%;
 }

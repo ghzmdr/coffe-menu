@@ -14,64 +14,31 @@ class Menu extends Component {
             <div className="column is-half">
                 <table className="table">
 
-                    <ProductsHeader tabs="Kush,,,1g,4g,5g"/>
-                    <ProductsList products={products.filter(p => p.category === 'Kush')}/>
+                    <ProductsHeader tabs="Kush,,up to 4g,4g and up"/>
+                    <ProductsList products={products.filter(p => p.category === 'Kush')} suffix={'/g'}/>
 
-                    <ProductsHeader tabs="Haze,,,1g,4g,5g"/>
-                    <ProductsList products={products.filter(p => p.category === 'Haze')}/>
+                    <ProductsHeader tabs="Classics,,up to 4g,4g and up"/>
+                    <ProductsList products={products.filter(p => p.category === 'Classics')} suffix={'/g'}/>
 
-                    <ProductsHeader tabs="Classics,,,1g,4g,5g"/>
-                    <ProductsList products={products.filter(p => p.category === 'Classics')}/>
-
+                    <ProductsHeader tabs="Edibles,,,1 piece"/>
+                    <ProductsList products={products.filter(p => p.category === 'Edibles')}/>
                 </table>
             </div>
             <div className="column is-half">
                 <table className="table">
 
-                    <ProductsHeader tabs="Hashish,,,1g,4g,5g"/>
-                    <ProductsList products={products.filter(p => p.category === 'Hashish')}/>
+                    <ProductsHeader tabs="Haze,,up to 4g,4g and up"/>
+                    <ProductsList products={products.filter(p => p.category === 'Haze')} suffix={'/g'}/>
+
+                    <ProductsHeader tabs="Hashish,,up to 4g,4g and up"/>
+                    <ProductsList products={products.filter(p => p.category === 'Hashish')} suffix={'/g'}/>
+
                 </table>
                 <table className="table">
-                    <ProductsHeader tabs="Joints,,,,,1 piece"/>
+
+                    <ProductsHeader tabs="Joints,,,1 piece"/>
                     <ProductsList products={products.filter(p => p.category === 'Prerolled')}/>
 
-                    <ProductsHeader tabs="Edibles,,,,,1 piece"/>
-                    <ProductsList products={products.filter(p => p.category === 'Edibles')}/>
-
-                </table>
-                <table className="table">
-
-                    <ProductsHeader tabs="Services,,,,,,Price"/>
-
-                    <tbody className="ProductsList">
-                        {
-                            services.map((s, i) => <tr key={i} className="ProductEntry">
-                                <td className="ProductEntry__name">{s.name}</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td className="ProductEntry__price">{s.price}</td>
-                            </tr>)
-                        }
-                    </tbody>
-
-                    <ProductsHeader tabs="Tools,,,,,,Deposit"/>
-                    <tbody>
-                        {
-                            tools.map((t, i) => <tr key={i} className="ProductEntry">
-                                <td className="ProductEntry__name">{t.name}</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td className="ProductEntry__price">{t.price}€</td>
-                            </tr>)
-                        }
-
-                    </tbody>
                 </table>
             </div>
         </div>
