@@ -1,24 +1,32 @@
 .ProductEntry {
+
     td {
-        color: white;
+        height: 4.2rem;
         color: black;
-        padding: 0.3em;
+        padding: 0.2em 0.3em !important;
         @include text-aliasing;
+
+        border-bottom: 3px solid #b2b2b2;
+        vertical-align: middle;
     }
+
 }
 
 .ProductEntry__name,
 .ProductEntry__price {
-    font-size: $item_fz;
-    @include text-aliasing;
+    font-size: 2.5rem;
     font-weight: bold;
+
+    @include text-aliasing;
 }
 
 .ProductEntry__label {
-    font-size: 1.6rem !important;
+    font-size: 1.8rem !important;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    color: rgba(#112233, 0.8) !important;
+
     @include text-aliasing;
-    color: $dark !important;
-    background: $yellow !important;
 }
 
 .ProductEntry__price {

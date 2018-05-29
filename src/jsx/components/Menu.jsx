@@ -14,30 +14,28 @@ class Menu extends Component {
             <div className="column is-half">
                 <table className="table">
 
-                    <ProductsHeader tabs="Kush,,up to 4g,4g and up"/>
+                    <ProductsHeader tabs="Kush,,per gram,4+ g"/>
                     <ProductsList products={products.filter(p => p.category === 'Kush')} suffix={'/g'}/>
 
-                    <ProductsHeader tabs="Classics,,up to 4g,4g and up"/>
+                    <ProductsHeader tabs="Classics,,per gram,4+ g"/>
                     <ProductsList products={products.filter(p => p.category === 'Classics')} suffix={'/g'}/>
 
-                    <ProductsHeader tabs="Edibles,,,1 piece"/>
-                    <ProductsList products={products.filter(p => p.category === 'Edibles')}/>
                 </table>
             </div>
             <div className="column is-half">
                 <table className="table">
 
-                    <ProductsHeader tabs="Haze,,up to 4g,4g and up"/>
+                    <ProductsHeader tabs="Haze,,per gram,4+ g"/>
                     <ProductsList products={products.filter(p => p.category === 'Haze')} suffix={'/g'}/>
 
-                    <ProductsHeader tabs="Hashish,,up to 4g,4g and up"/>
+                    <ProductsHeader tabs="Hashish,,per gram,4+ g"/>
                     <ProductsList products={products.filter(p => p.category === 'Hashish')} suffix={'/g'}/>
 
                 </table>
                 <table className="table">
 
-                    <ProductsHeader tabs="Joints,,,1 piece"/>
-                    <ProductsList products={products.filter(p => p.category === 'Prerolled')}/>
+                    <ProductsHeader tabs="Prepacked,,,1 piece"/>
+                    <ProductsList products={products.filter(p => p.category === 'Prerolled' || p.category === 'Edibles')}/>
 
                 </table>
             </div>

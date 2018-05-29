@@ -6,7 +6,7 @@ class ProductEntry extends Component {
 
         let isIndica = product.kind.indexOf('Indica') != -1;
         let isSativa = product.kind.indexOf('Sativa') != -1;
-
+// asd
         let kindTagColor = 'success';
 
         if (isIndica) {
@@ -18,8 +18,8 @@ class ProductEntry extends Component {
         }
 
         const prices =  product.hasDiscount ? [
-            product.price,
-            (product.price * 0.9).toFixed(2).replace('.00', '')
+            product.price.toFixed(2).replace('.00', '.-').replace('.', ','),
+            (product.price * 0.9).toFixed(2).replace('.00', '.-').replace('.', ',')
         ] : [
             null,
             product.price
@@ -34,7 +34,7 @@ class ProductEntry extends Component {
 
                 {
                     prices.map((p, i) => <td key={i} className="ProductEntry__price">
-                        {p ? `${p}€` : ''} {suffix ? suffix : ''}
+                        {p ? `€ ${p}` : ''}{i > 0 && suffix ? suffix : ''}
                     </td>)
                 }
         </tr>

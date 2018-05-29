@@ -1,5 +1,5 @@
 .Menu.is-gapless > .column {
-    padding: 0.5rem 1.8rem !important;
+    padding: 0.5rem 3rem !important;
 }
 
 .Menu table {
@@ -8,19 +8,18 @@
     width: 100%;
     background: transparent;
 
-    th, td {
-        border-color: #b2b2b2;
-    }
-
     thead {
-        th {
 
+        border: none;
+
+        th {
+            border: none;
             text-align: center;
-            vertical-align: bottom;
 
             &:first-child {
                 width: 25%;
                 text-align: left;
+                font-size: 3rem;
             }
 
             &:nth-last-child(1),
@@ -31,14 +30,24 @@
     }
 
     tbody {
+        border: 3px solid #b2b2b2;
+
         td {
 
-            vertical-align: middle;
-
             &:first-child {
-                width: 30%;
+                width: 40%;
+                border: none;
             }
+        }
 
+        tr:nth-child(odd) {
+            background: rgba(white, 0.4);
+        }
+
+        tr:last-of-type {
+            td {
+                border: none;
+            }
         }
 
     }
