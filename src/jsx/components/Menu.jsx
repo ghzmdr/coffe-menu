@@ -1,46 +1,76 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
 
-import ProductsList from './ProductsList';
-import ProductsHeader from './ProductsHeader';
+import CategoryPanel from './CategoryPanel'
 
 class Menu extends Component {
 
-    render() {
-        const {products, tools, services} = this.props;
+  render () {
+    const {products} = this.props
+    console.log(products)
 
-        if (!products) return null;
+    const categories = [
+      {
+        slug: 'Weed',
+        title: 'Flowers',
+        sub: [
+          {slug: 'Kush', title: 'Kush'},
+          {slug: 'Classics', title: 'Classics'},
+          {slug: 'Haze', title: 'Haze'}
+        ],
+        columns: [
+          {title: 'Flowers', slug: 'name'},
+          {title: '', slug: 'kind'},
+          {title: 'up to 3,99g', slug: 'price'},
+          {
+            title: 'from 4g to 5g',
+            slug: 'price',
+            transform: p => (p * 0.9).toFixed(2).replace('.', ',')
+          }
+        ]}
+    ]
 
-        return <div className="Menu columns is-gapless">
-            <div className="column is-half">
-                <table className="table">
+    if (!products) return null
 
-                    <ProductsHeader tabs="Kush,,per gram,4+ g"/>
-                    <ProductsList products={products.filter(p => p.category === 'Kush')} suffix={'/g'}/>
+    return <div className="Menu">
+      {
+        categories.map(c => <CategoryPanel
+          category={c}
+          products={products}
+        />)
+      }
+    </div>
 
-                    <ProductsHeader tabs="Classics,,per gram,4+ g"/>
-                    <ProductsList products={products.filter(p => p.category === 'Classics')} suffix={'/g'}/>
+    // <div>
+    //   <div className="column is-half">
+    //     <table className="table">
 
-                </table>
-            </div>
-            <div className="column is-half">
-                <table className="table">
+    //       <ProductsHeader tabs="Kush,,per gram,4+ g"/>
+    //       <ProductsList products={products.filter(p => p.category === 'Kush')} suffix={'/g'}/>
 
-                    <ProductsHeader tabs="Haze,,per gram,4+ g"/>
-                    <ProductsList products={products.filter(p => p.category === 'Haze')} suffix={'/g'}/>
+    //       <ProductsHeader tabs="Classics,,per gram,4+ g"/>
+    //       <ProductsList products={products.filter(p => p.category === 'Classics')} suffix={'/g'}/>
 
-                    <ProductsHeader tabs="Hashish,,per gram,4+ g"/>
-                    <ProductsList products={products.filter(p => p.category === 'Hashish')} suffix={'/g'}/>
+    //     </table>
+    //   </div>
+    //   <div className="column is-half">
+    //     <table className="table">
 
-                </table>
-                <table className="table">
+    //       <ProductsHeader tabs="Haze,,per gram,4+ g"/>
+    //       <ProductsList products={products.filter(p => p.category === 'Haze')} suffix={'/g'}/>
 
-                    <ProductsHeader tabs="Prepacked,,,1 piece"/>
-                    <ProductsList products={products.filter(p => p.category === 'Prerolled' || p.category === 'Edibles')}/>
+    //       <ProductsHeader tabs="Hashish,,per gram,4+ g"/>
+    //       <ProductsList products={products.filter(p => p.category === 'Hashish')} suffix={'/g'}/>
 
-                </table>
-            </div>
-        </div>
-    }
+    //     </table>
+    //     <table className="table">
+
+    //       <ProductsHeader tabs="Prepacked,,,1 piece"/>
+    //       <ProductsList products={products.filter(p => p.category === 'Prerolled' || p.category === 'Edibles')}/>
+
+    //     </table>
+    //   </div>
+    // </div>
+  }
 
 }
 

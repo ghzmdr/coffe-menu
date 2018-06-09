@@ -1,24 +1,43 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
+import TweenLite from 'gsap'
 
 export default class NewsBar extends Component {
+  constructor (p) {
+    super(p)
+    this.animateText = this.animateText.bind(this)
+  }
 
-    render() {
-        const {rules} = this.props;
+  componentDidMount () {
+    this.animateText()
+  }
 
-        const orderedRules = this.orderRules(rules);
-        const cleanRules = orderedRules.map(r => r.content);
+  animateText () {
+    const {text} = this.refs
+    TweenLite.set(text, {x: '100vh'})
+    TweenLite.to(text, 100, {
+      x: '-100%',
+      onComplete: this.animateText,
+      ease: Power0.easeNone,
+      force3D: true
+    })
+  }
 
-        return <div className="NewsBar">
-            <div className="NewsBar__content content" >
-                <p>
-                    <b>HOUSE RULES:</b> {cleanRules.join(' • ')} <span style={{paddingLeft: '50vw'}}><b>HOUSE RULES:</b> {cleanRules.join(' • ')}</span>
-                </p>
-            </div>
-        </div>
-    }
+  render () {
+    const {rules} = this.props
 
-    orderRules(rules) {
-        return rules.sort((a, b) => a.position > b.position)
-    }
+    const orderedRules = this.orderRules(rules)
+    const cleanRules = orderedRules.map(r => r.content)
 
+    return <div className="NewsBar">
+      <div className="NewsBar__content content" >
+        <p ref='text'>
+          <b>HOUSE RULES:</b> {cleanRules.join(' • ')} <span style={{paddingLeft: '50vw'}}><b>HOUSE RULES:</b> {cleanRules.join(' • ')}</span>
+        </p>
+      </div>
+    </div>
+  }
+
+  orderRules (rules) {
+    return rules.sort((a, b) => a.position > b.position)
+  }
 }

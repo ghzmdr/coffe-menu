@@ -1,9 +1,9 @@
 .ProductEntry {
 
     td {
-        height: 4.2rem;
+        height: 1rem;
         color: black;
-        padding: 0.2em 0.3em !important;
+        padding: 0 1.4rem !important;
         @include text-aliasing;
 
         border-bottom: 3px solid #b2b2b2;
@@ -14,7 +14,7 @@
 
 .ProductEntry__name,
 .ProductEntry__price {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-weight: bold;
 
     @include text-aliasing;
@@ -26,6 +26,9 @@
     letter-spacing: 1.2px;
     color: rgba(#112233, 0.8) !important;
 
+
+    height: 2.4rem !important;
+    padding: 0.6rem !important;
     @include text-aliasing;
 }
 

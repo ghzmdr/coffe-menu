@@ -7,12 +7,21 @@ html {
     background: #DFDFE1;
 
     font-size: 10px;
-    font-family: 'Monsterrat';
+
 
     color: black;
 }
 
+html, body {
+    font-family: 'IBM Plex Sans' !important;
+    font-weight: bold;
+}
+
 .column {
-    padding: 2.75rem 2rem;
+  display: inline-block;
+}
+
+.row {
+  display: block;
 }
 
